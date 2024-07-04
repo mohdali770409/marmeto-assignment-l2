@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  margin-top: 25px;
+}
+.select-heading {
+  /* width: 178px;
+  height: 19px; */
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.36px;
+}
+.selector-div {
+  display: flex;
+  justify-content: center;
+}
+
+.selector-buttons {
+  width: 300px;
+  height: 20px;
+  display: flex;
+}
+.button {
+  width: 100px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 9.68px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.clicked-property {
+  background-color: #000000;
+  color: #ffffff;
+}
+.product-boxes-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+.product-boxes {
+  width: 370px;
+  height: 143px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-box {
+  width: 88px;
+  height: 143px;
+  position: relative;
+}
+.product-image-box {
+  width: 88px;
+  height: 100px;
+}
+.product-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+.badge-text {
+  font-family: "Khula";
+  font-weight: 600;
+  font-size: 5px;
+  line-height: 8.03px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  padding: 2px 4px 2px 4px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.product-name-div {
+  /* width: 76px;
+  height: 11px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* gap: 4px; */
+}
+.product-name {
+  font-size: 8px;
+
+  font-weight: 600px;
+  line-height: 12.85px;
+  font-family: "Khula";
+}
+.dot-separator {
+  width: 2px;
+  height: 2px;
+  background-color: #000000;
+}
+.product-brand {
+  font-size: 6px;
+  line-height: 9.36px;
+  font-weight: 400;
+}
+.price-div {
+  width: 80px;
+  height: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.discounted-price,
+.original-price,
+.offer-percentage {
+  font-size: 6px;
+  font-weight: 600;
+  font-family: "Khula";
+  line-height: 9.36px;
+}
+.original-price {
+  color: #8f8f8f;
+  text-decoration: line-through;
+}
+.offer-percentage {
+  color: #ff3737;
+}
+.add-to-cart-button {
+  cursor: pointer;
+  border: none;
+  background-color: #000000;
+  width: 100%;
+  height: 15px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 6px;
+  font-weight: 600;
+  line-height: 9.36px;
+  font-family: "Khula";
+  margin-top: 5px;
+}
+.icon-selector-div {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    margin: 30px 10px;
+  }
+  .selector-div {
+    width: 100%;
+  }
+  .selector-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    gap: 2px;
+  }
+  .button {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  .product-boxes {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    width: 100%;
+  }
+  .product-box {
+    width: 40%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .price-div {
+    width: 100%;
+  }
+  .discounted-price {
+    font-size: 20px;
+  }
+  .original-price {
+    font-size: 20px;
+  }
+  .offer-percentage {
+    font-size: 20px;
+  }
+  .product-image-box {
+    height: auto;
+    width: 100%;
+  }
+  .product-image {
+    height: 100%;
+    width: 100%;
+    max-height: 526px;
+    /* height: auto; */
+  }
+  .add-to-cart-button {
+    padding: 20px 0;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .product-name {
+    font-size: 20px;
+  }
+  .product-brand {
+    font-size: 17px;
+  }
+  .dot-separator {
+    height: 4px;
+    width: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    margin: 20px 10px;
+  }
+  .selector-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .selector-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    gap: 2px;
+  }
+  .button {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+  .product-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .product-box {
+    width: 43%;
+    max-width: 200px;
+    height: auto;
+  }
+  .product-image-box {
+    height: auto;
+    width: 100%;
+  }
+  .add-to-cart-button {
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .product-image {
+    height: 100%;
+    width: 100%;
+    max-height: 212px;
+    /* height: auto; */
+  }
+  .price-div {
+    width: 100%;
+  }
+  .discounted-price {
+    font-size: 10px;
+  }
+  .original-price {
+    font-size: 10px;
+  }
+  .offer-percentage {
+    font-size: 12px;
+  }
+  .product-name {
+    font-size: 12px;
+  }
+  .product-brand {
+    font-size: 12px;
+  }
+  .dot-separator {
+    height: 4px;
+    width: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 0 10px;
+  }
+  .selector-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .selector-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+  .button {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  .product-box {
+    width: 43%;
+    height: auto;
+    max-width: 200px;
+  }
+  .product-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .product-image-box {
+    height: auto;
+    width: 100%;
+  }
+  .product-image {
+    height: 100%;
+    width: 100%;
+    max-height: 212px;
+    /* height: auto; */
+  }
+  .add-to-cart-button {
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+}
